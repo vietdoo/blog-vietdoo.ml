@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>code on Blog của Việt Đỗ</title>
+    <link>https://example.com/tags/code/</link>
+    <description>Recent content in code on Blog của Việt Đỗ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copyright © 2020–2021, Đỗ Quốc Việt(vietdoo); all rights reserved.</copyright><atom:link href="https://example.com/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Những vấn đề về Code</title>
+      <link>https://example.com/post/van-de-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/van-de-code/</guid>
+      <description> Reading Binary File void readingFile() {int n = 0;int *a;ifstream fin;fin.open(&amp;quot;output.bin&amp;quot;, ios::binary);if (fin.is_open()) {fin.seekg(4, ios::beg);fin.read((char*)&amp;amp;n, sizeof(n));	}fin.close();} </description>
+    </item>
+    
+  </channel>
+</rss>
