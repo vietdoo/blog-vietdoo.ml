@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>index on Blog của Việt Đỗ</title>
-    <link>https://example.com/tags/index/</link>
-    <description>Recent content in index on Blog của Việt Đỗ</description>
+    <title>index on Blog của Việt</title>
+    <link>https://vietdoo.ml/tags/index/</link>
+    <description>Recent content in index on Blog của Việt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2020–2021, Đỗ Quốc Việt(vietdoo); all rights reserved.</copyright><atom:link href="https://example.com/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <language>vi</language>
+    <copyright>Copyright © 2020–2021 Đỗ Quốc Việt (vietdoo) all rights reserved.</copyright><atom:link href="https://vietdoo.ml/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Posts</title>
-      <link>https://example.com/post/</link>
-      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      <link>https://vietdoo.ml/post/</link>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/</guid>
+      <guid>https://vietdoo.ml/post/</guid>
       <description></description>
     </item>
     

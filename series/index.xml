@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Blog của Việt Đỗ</title>
-    <link>https://example.com/series/</link>
-    <description>Recent content in Series on Blog của Việt Đỗ</description>
+    <title>Series on Blog của Việt</title>
+    <link>https://vietdoo.ml/series/</link>
+    <description>Recent content in Series on Blog của Việt</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2020–2021, Đỗ Quốc Việt(vietdoo); all rights reserved.</copyright><atom:link href="https://example.com/series/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Coding</title>
-      <link>https://example.com/series/coding/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/series/coding/</guid>
-      <description></description>
-    </item>
-    
+    <language>vi</language>
+    <copyright>Copyright © 2020–2021 Đỗ Quốc Việt (vietdoo) all rights reserved.</copyright><atom:link href="https://vietdoo.ml/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

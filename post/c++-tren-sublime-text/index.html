@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+    Hướng dẫn để Code được C/C&#43;&#43; trên Sublime Text 4 (C&#43;&#43; 17)
+</title><meta name="author" content="vietdoo">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/favicon-32x32.png " sizes="32x32" type="image/png">
+<link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0c344b">
+<link rel="icon" href="/favicon.ico">
+
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+    
+
+
+
+    
+        
+            <link rel="stylesheet" href="/dist/main.37ab3f61b95417873748.min.css">
+        
+    
+
+
+<link rel="stylesheet" href="/css/beauty.css">
+
+
+<link rel="canonical" href="https://vietdoo.ml/post/c&#43;&#43;-tren-sublime-text/"><meta property="og:title" content="Hướng dẫn để Code được C/C&#43;&#43; trên Sublime Text 4 (C&#43;&#43; 17)" />
+<meta property="og:description" content="
+Hướng dẫn biên dịch C&#43;&#43; trên Sublime Text 4" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://vietdoo.ml/post/c&#43;&#43;-tren-sublime-text/" /><meta property="og:image" content="https://vietdoo.ml/sublime-text-c&#43;&#43;/cover.jpg" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-07-16T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-07-16T00:00:00&#43;00:00" />
+
+<meta itemprop="name" content="Hướng dẫn để Code được C/C&#43;&#43; trên Sublime Text 4 (C&#43;&#43; 17)">
+<meta itemprop="description" content="
+Hướng dẫn biên dịch C&#43;&#43; trên Sublime Text 4"><meta itemprop="datePublished" content="2021-07-16T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-07-16T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="512"><meta itemprop="image" content="https://vietdoo.ml/sublime-text-c&#43;&#43;/cover.jpg">
+<meta itemprop="keywords" content="khdl,c&#43;&#43;,data science," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://vietdoo.ml/sublime-text-c&#43;&#43;/cover.jpg"/>
+
+<meta name="twitter:title" content="Hướng dẫn để Code được C/C&#43;&#43; trên Sublime Text 4 (C&#43;&#43; 17)"/>
+<meta name="twitter:description" content="
+Hướng dẫn biên dịch C&#43;&#43; trên Sublime Text 4"/>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-197822377-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-197822377-1');
+</script>
+<script data-ad-client="ca-pub-5967883969484904" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5967883969484904"
+     crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm" id="navbar-main-menu">
+    <div class="container">
+        <a class="navbar-brand font-weight-bold" href="https://vietdoo.ml">vietdoo's blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="navbar-nav ml-auto">
+                
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="https://vietdoo.codes">vietdoo.codes</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="https://vietdoo.github.io/">AI-Server</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/tags/">Tags</a></li>
+                
+                    <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+                
+            
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+<main class="content-page container pt-7 pb-5">
+    
+    <div class="row">
+        <div class="col">
+            <article>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1>Hướng dẫn để Code được C/C&#43;&#43; trên Sublime Text 4 (C&#43;&#43; 17)</h1>
+                        <div class="meta text-muted mb-3">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">July 16, 2021</p>
+                            
+                        </div>
+
+                        <ul class="authors list-inline"><li class="list-inline-item mr-3">
+                    <div class="media author"><a href="/authors/vietdoo/" class="mr-3">
+                                    <picture>
+                                        <source srcset="/authors/vietdoo/vietdoo_hu0a9e530c8bdf05d9d4dc481f28b2eed5_560400_64x0_resize_q75_box.jpg 1x, /authors/vietdoo/vietdoo_hu0a9e530c8bdf05d9d4dc481f28b2eed5_560400_128x0_resize_q100_box.jpg 2x, /authors/vietdoo/vietdoo_hu0a9e530c8bdf05d9d4dc481f28b2eed5_560400_192x0_resize_q100_box.jpg 3x">
+                                        <img src="/authors/vietdoo/vietdoo_hu0a9e530c8bdf05d9d4dc481f28b2eed5_560400_64x0_resize_q75_box.jpg" class="rounded-circle" alt="Đỗ Quốc Việt">
+                                    </picture>
+                                </a><div class="media-body">
+                            <h5 class="name my-0"><a href="/authors/vietdoo/" class="small">Đỗ Quốc Việt</a>
+                            </h5><p class="social small text-muted">
+                                    <a href="https://facebook.com/vietdoo/">@vietdoo</a>
+                                </p></div>
+                    </div>
+                </li></ul>
+                    </div>
+                </div><div class="row justify-content-center mb-3">
+                                <div class="col-lg-10">
+                                    <img data-src="/images/sublime-text-c&#43;&#43;/cover_huc0c957d2bcf9ec9e478d9bcac6b1136a_188381_750x500_fit_q75_box.jpg" class="img-fluid rounded mx-auto d-block" alt="Hướng dẫn để Code được C/C&#43;&#43; trên Sublime Text 4 (C&#43;&#43; 17)">
+                                </div>
+                            </div><div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="content">
+                            <h5 id="heading"></h5>
+<p><strong><code>Hướng dẫn biên dịch C++ trên Sublime Text 4</code></strong></p>
+<h3 id="1-tổng-quan-sublime-text">1. Tổng quan Sublime Text.</h3>
+<p>Hôm này mình sẽ hướng dẫn cách cài đặt môi trường để chạy C++ trên Sublime Text 3/4 cực kỳ đơn giản.</p>
+<figure class="figure">
+    <a href="/images/sublime-text-c&#43;&#43;/sublime_main.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/images/sublime-text-c&#43;&#43;/sublime_main.jpg"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Đây là Text editor yêu thích cũng mình được vài năm rồi, mình trải nghiệm từ <strong>Sublime Text 2</strong> và đến bây giờ là <strong>Sublime Text 4</strong> với giao diện cập nhật cực kỳ đẹp.</p>
+<p>Và khi nó được kết hợp các trình biên dịch với <strong>C++, python</strong>&hellip; thì nó trở lên quá tuyệt vời.</p>
+<p>Nếu như chỉ cần làm các project đơn giản, giải quyết các bài tập, các thứ cần test với <strong>C++</strong> thì mình luôn ưu tiên dùng <strong>Sublime Text</strong> vì thực sự nó giải quyết vấn đề quá <strong>nhanh</strong> chỉ cần mở lên code, ngay lập tức chạy được.</p>
+<p>Với những ưu điểm:</p>
+<ul>
+<li><em>Siêu nhẹ.</em></li>
+<li><em>Nhanh.</em></li>
+<li><em>Ổn định.</em></li>
+<li><em>Free.</em></li>
+<li><em>Đơn giản.</em></li>
+<li><em>Tiện lợi.</em></li>
+<li><em>Đẹp mắt.</em></li>
+<li><em>Có các Package.</em></li>
+<li><em>Snippset.</em></li>
+</ul>
+<h3 id="2-cài-đặt-mingw">2. Cài đặt MinGW.</h3>
+<p>MinGW là một phần mềm mã nguồn mở, một trình biên dịch ngôn ngữ C/C++ trên Windows.</p>
+<p>Các bạn tải trực tiếp tại link sau: <strong><a href="https://nuwen.net/files/mingw/mingw-17.1.exe">minGW 17.1</a>.</strong></p>
+<figure class="figure">
+    <a href="/images/sublime-text-c&#43;&#43;/mingw_setup.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/images/sublime-text-c&#43;&#43;/mingw_setup.jpg"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Tải về xong, ta mở lên chọn ổ <strong>C</strong>:\ và chọn <strong>Extract</strong>. Đợi một lát máy sẽ tiến hành cài, sau khi xong tiến hành bước tiếp theo.</p>
+<hr>
+<p>Ta thêm minGW vào môi trường của Windows bằng cách:</p>
+<figure class="figure">
+    <a href="/images/sublime-text-c&#43;&#43;/env.gif" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/images/sublime-text-c&#43;&#43;/env.gif"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Chọn <strong>ô tìm kiếm</strong> Windows hoặc nhấn tổ hợp  <strong>Windows + S</strong> để hiện ra ô tìm kiếm, sau đó gõ tìm <strong>Environment</strong> và làm như video trên.</p>
+<h3 id="3-cài-đặt-sublime-text-4">3. Cài đặt Sublime Text 4.</h3>
+<p>Các bạn tải trực tiếp tại link sau: <a href="https://www.sublimetext.com/download"><strong>Sublime Text 4</strong></a>. Chọn bản cho <strong>Windows</strong> tải về và cài đặt.</p>
+<p>Sau khi cài đặt xong, các bạn mở <strong>Sublime Text</strong> lên. Ở trên góc trái chọn nút <strong>3 gạch</strong>  -&gt; <strong>Tools</strong> -&gt; <strong>Build System</strong> -&gt; <strong>New Build System&hellip;</strong></p>
+<figure class="figure">
+    <a href="/images/sublime-text-c&#43;&#43;/sublimetext.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/images/sublime-text-c&#43;&#43;/sublimetext.jpg"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<pre><code class="language-json">{
+    &quot;shell_cmd&quot;: &quot;g++ -std=c++17 -Wall \&quot;${file}\&quot; -o \&quot;${file_path}/${file_base_name}\&quot; &amp;&amp; start cmd /k \&quot;$file_base_name\&quot; &amp;&amp; cmd /c exit &amp;&amp; echo vietdo 2021 build system&quot;,
+	&quot;cmd&quot; : &quot;echo exit&quot;,
+	&quot;working_dir&quot;: &quot;${file_path}&quot;,
+	&quot;selector&quot;: &quot;source.cpp&quot;,
+	&quot;shell&quot;: true
+}
+</code></pre>
+<p>Các bạn <strong>copy</strong> đoạn code ở trên và <strong>paste</strong> vào <strong>tab</strong> <em>untitled.sublime-build</em> vừa được mở ra.</p>
+<figure class="figure">
+    <a href="/images/sublime-text-c&#43;&#43;/sublimetext_b.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/images/sublime-text-c&#43;&#43;/sublimetext_b.jpg"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Sau đó nhấn tổ hợp <strong>Ctrl + S</strong> và thay đoạn <strong>untitled</strong> trong  <em>untitled.sublime-build</em> thành bất cứ tên gì mà các bạn thích ví dụ mình sẽ đặt là <strong>Run_Cplusplus</strong>.<em>sublime-build</em> sau đó save lại.</p>
+<figure class="figure">
+    <a href="/images/sublime-text-c&#43;&#43;/sublimetext_bsave.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/images/sublime-text-c&#43;&#43;/sublimetext_bsave.jpg"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Bước cuối cùng. Ở trên góc trái chọn nút <strong>3 gạch</strong>  -&gt; <strong>Tools</strong> -&gt; <strong>Build System</strong> -&gt; Tìm tên bạn vừa đặt lúc nãy và chọn là xong. của mình là <strong>Run_Cplusplus</strong>.</p>
+<figure class="figure">
+    <a href="/images/sublime-text-c&#43;&#43;/sublimetext_r.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/images/sublime-text-c&#43;&#43;/sublimetext_r.jpg"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<h3 id="4-chạy-thử-thôi-nào">4. Chạy thử thôi nào.</h3>
+<p>Như vậy các bạn đã cài xong môi trường để có thể chạy C++ trên Sublime Text 4.</p>
+<p>Mình sẽ tạo một file demo là <em><strong>helloworld.cpp</strong></em> sau đó viết một đoạn code c++ ngắn để test thử.
+Nhấn tổ hợp <strong>Ctrl + B</strong> để chạy để nhé các bạn.</p>
+<figure class="figure">
+    <a href="/images/sublime-text-c&#43;&#43;/success.jpg" class="d-block" data-toggle="lightbox" data-gallery="post-gallery">
+        <img src="/images/sublime-text-c&#43;&#43;/success.jpg"class="figure-img img-fluid"
+        /> 
+    </a>
+</figure>
+
+<p>Oke chương trình run <strong>thành công</strong> và không có lỗi gì và <strong>kết quả đúng</strong> như ý muốn của mình.
+Hehe quá dễ phải không nào. <code>Chúc các bạn thành công nhé!!</code></p>
+                        </div><div class="tags my-3"><a class="badge badge-pill badge-light border mr-2" href="/tags/khdl">
+                                    <i class="fas fa-tag mr-2"></i>khdl
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/c&#43;&#43;">
+                                    <i class="fas fa-tag mr-2"></i>c&#43;&#43;
+                                </a><a class="badge badge-pill badge-light border mr-2" href="/tags/data-science">
+                                    <i class="fas fa-tag mr-2"></i>data science
+                                </a></div><ul class="share nav my-3 justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://twitter.com/intent/tweet?url=https%3a%2f%2fvietdoo.ml%2fpost%2fc%2b%2b-tren-sublime-text%2f&text=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20%c4%91%e1%bb%83%20Code%20%c4%91%c6%b0%e1%bb%a3c%20C%2fC%2b%2b%20tr%c3%aan%20Sublime%20Text%204%20%28C%2b%2b%2017%29">
+              <i class="fa-fw fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/shareArticle?url=https%3a%2f%2fvietdoo.ml%2fpost%2fc%2b%2b-tren-sublime-text%2f&title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20%c4%91%e1%bb%83%20Code%20%c4%91%c6%b0%e1%bb%a3c%20C%2fC%2b%2b%20tr%c3%aan%20Sublime%20Text%204%20%28C%2b%2b%2017%29">
+                <i class="fa-fw fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fvietdoo.ml%2fpost%2fc%2b%2b-tren-sublime-text%2f&t=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20%c4%91%e1%bb%83%20Code%20%c4%91%c6%b0%e1%bb%a3c%20C%2fC%2b%2b%20tr%c3%aan%20Sublime%20Text%204%20%28C%2b%2b%2017%29">
+                <i class="fa-fw fab fa-facebook-f"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://reddit.com/submit?url=https%3a%2f%2fvietdoo.ml%2fpost%2fc%2b%2b-tren-sublime-text%2f&title=H%c6%b0%e1%bb%9bng%20d%e1%ba%abn%20%c4%91%e1%bb%83%20Code%20%c4%91%c6%b0%e1%bb%a3c%20C%2fC%2b%2b%20tr%c3%aan%20Sublime%20Text%204%20%28C%2b%2b%2017%29">
+                <i class="fa-fw fab fa-reddit-alien"></i>
+            </a>
+        </li>
+    </nav>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                    </div>
+                </div></article>
+        </div>
+    </div>
+	
+    
+
+    <div id="hyvor-talk-view"></div>
+<script type="text/javascript">
+    var HYVOR_TALK_WEBSITE = 4660;
+    var HYVOR_TALK_CONFIG = {
+        url: false,
+        id: false
+    };
+</script>
+<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed.js"></script>
+</main>
+
+
+    <footer class="footer text-center bg-dark py-6">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://vietdoo.ml/index.xml" rel="alternate" type="application/rss+xml" class="icons d-block">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a></li><li class="list-inline-item">
+                        <a href="mailto:dodoviet@icloud.com" class="icons d-block">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li><li class="list-inline-item">
+                            <a href="https://facebook.com/vietdoo" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://github.com/vietdoo" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.instagram.com/vietdoo1/" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/vietdoo" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://stackoverflow.com/users/15213564/%c4%90%e1%bb%97-qu%e1%bb%91c-vi%e1%bb%87t" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li><li class="list-inline-item">
+                            <a href="https://twitter.com/vietdoo_tw" class="icons d-block">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                </ul>
+
+                <p class="text-muted">
+                    
+                        Copyright © 2020–2021 Đỗ Quốc Việt (vietdoo) all rights reserved.
+                    
+                </p>
+
+                <p class="text-muted">
+                Powered by <a href="https://github.com/vietdoo" target="_blank">vietdoo</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        
+            <script src="/dist/main.d608eadfe5ac0688902e.min.js"></script>
+        
+    
+
+
+
+<script>
+    window.Prism = window.Prism || {};
+    window.Prism.manual = true;
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
+
+
+
+
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-197822377-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+</body>
+</html>

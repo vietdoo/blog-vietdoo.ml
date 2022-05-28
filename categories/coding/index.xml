@@ -2,18 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>coding on Blog của Việt Đỗ</title>
-    <link>https://example.com/categories/coding/</link>
+    <link>https://vietdoo.ml/categories/coding/</link>
     <description>Recent content in coding on Blog của Việt Đỗ</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <copyright>Copyright © 2020–2021, Đỗ Quốc Việt(vietdoo); all rights reserved.</copyright><atom:link href="https://example.com/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <language>vi</language>
+    <copyright>Copyright © 2020–2021 Đỗ Quốc Việt (vietdoo) all rights reserved.</copyright>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vietdoo.ml/categories/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Những vấn đề về Code</title>
-      <link>https://example.com/post/van-de-code/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Reading Binary File C&#43;&#43;</title>
+      <link>https://vietdoo.ml/post/van-de-code/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/van-de-code/</guid>
-      <description> Reading Binary File void readingFile() {int n = 0;int *a;ifstream fin;fin.open(&amp;quot;output.bin&amp;quot;, ios::binary);if (fin.is_open()) {fin.seekg(4, ios::beg);fin.read((char*)&amp;amp;n, sizeof(n));	}fin.close();} </description>
+      <guid>https://vietdoo.ml/post/van-de-code/</guid>
+      <description>&lt;h4 id=&#34;heading&#34;&gt;&lt;/h4&gt;
+&lt;p&gt;It extracts a given number of bytes from the given stream and place them into the memory.&lt;/p&gt;</description>
     </item>
     
   </channel>
