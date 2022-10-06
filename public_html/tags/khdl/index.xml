@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>khdl on Blog của Việt</title>
+    <link>https://vietdoo.ml/tags/khdl/</link>
+    <description>Recent content in khdl on Blog của Việt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <copyright>Copyright © 2020–2021 Đỗ Quốc Việt (vietdoo) all rights reserved.</copyright>
+    <lastBuildDate>Sat, 17 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vietdoo.ml/tags/khdl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Review Ngành Khoa học dữ liệu Đại học Khoa Học Tự Nhiên</title>
+      <link>https://vietdoo.ml/post/review-nganh-khoa-hoc-du-lieu-hcmus/</link>
+      <pubDate>Sat, 17 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://vietdoo.ml/post/review-nganh-khoa-hoc-du-lieu-hcmus/</guid>
+      <description>&lt;h5 id=&#34;heading&#34;&gt;&lt;/h5&gt;
+&lt;p&gt;Xin chào! Mình là Đỗ Quốc Việt.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hướng dẫn để Code C/C&#43;&#43; trên Sublime Text 4 </title>
+      <link>https://vietdoo.ml/post/bien-dich-c&#43;&#43;-sublime-text/</link>
+      <pubDate>Tue, 04 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://vietdoo.ml/post/bien-dich-c&#43;&#43;-sublime-text/</guid>
+      <description>&lt;h5 id=&#34;heading&#34;&gt;&lt;/h5&gt;
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;Hướng dẫn biên dịch C++ trên Sublime Text 4&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

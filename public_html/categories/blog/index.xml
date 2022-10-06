@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Blog của Việt Đỗ</title>
+    <link>https://vietdoo.ml/categories/blog/</link>
+    <description>Recent content in blog on Blog của Việt Đỗ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>vi</language>
+    <copyright>Copyright © 2020–2021 Đỗ Quốc Việt (vietdoo) all rights reserved.</copyright>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vietdoo.ml/categories/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reading Binary File C&#43;&#43;</title>
+      <link>https://vietdoo.ml/post/van-de-code/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://vietdoo.ml/post/van-de-code/</guid>
+      <description>&lt;h4 id=&#34;heading&#34;&gt;&lt;/h4&gt;
+&lt;p&gt;It extracts a given number of bytes from the given stream and place them into the memory.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
